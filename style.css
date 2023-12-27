@@ -3,3 +3,42 @@ body {
     flex-direction: column;
     align-items: center;
 }
+h2 {
+    margin-top: 40px;
+}
+
+.cookies-popup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    bottom: 0px;
+    right: 0px;
+    height: fit-content;
+    padding: 0px;
+    width: fit-content;
+    top: auto;
+    left: auto;
+    border-radius: 5px;
+    border: 1px solid #aad;
+    margin: 10px;
+    padding: 0px 20px ;
+}
+
+ button {
+    height: fit-content;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #aad;
+    margin: 10px;
+}
+
+ button:hover {
+    background-color: #aad;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
