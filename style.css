@@ -2,13 +2,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #2E2E2E;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 50px;
 }
+
 h2 {
     margin-top: 40px;
 }
 
+input {
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 5px;
+    border: 1px #78599C solid;
+}
+
 .cookies-popup {
-    position: absolute;
+    z-index: 9999;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -20,25 +33,86 @@ h2 {
     top: auto;
     left: auto;
     border-radius: 5px;
-    border: 1px solid #aad;
+    box-shadow: #CDCDCD40 0 0 20px 0;
     margin: 10px;
-    padding: 0px 20px ;
-}
-
- button {
-    height: fit-content;
-    padding: 7px;
+    padding: 0px 20px;
     background-color: #fff;
-    border-radius: 5px;
-    border: 2px solid #aad;
-    margin: 10px;
+
 }
 
- button:hover {
-    background-color: #aad;
+button {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 40px;
+    height: fit-content;
+    background-color: #78599C;
+    border-radius: 4px;
+    margin: 10px;
     color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #9575ba;
+}
+
+button:focus {
+    background-color: #624385;
 }
 
 .hidden {
     display: none;
+}
+
+.panel {
+    padding: 50px 30px 40px 30px;
+    border-radius: 16px;
+    box-shadow: #CDCDCD40 0 0 20px 0;
+    background-color: #FFFFFF3D;
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+h1 {
+    color: #2E2E2E;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+ul {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+li {
+    line-height: 27px;
+}
+
+.bg-img-r {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(90deg, #FBFBFB00, #F0F0F0);
+
+}
+
+.bg-img-r div {
+    height: 100%;
+}
+
+.bg-img-r .bg-img {
+    background-image: url('images/Rectangle_802.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-bg {
+    position: relative;
+    padding: 40px;
 }
